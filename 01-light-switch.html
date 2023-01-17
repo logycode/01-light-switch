@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Morning</title>
+    <link rel="stylesheet" href="01-light-switch.css".css">
+</head>
+<body class="body-toggle">
+    <button class="button" onclick="toggleLight()">Toggle Light</button>
+    <script>
+        const btn = document.querySelector("button");
+        const bdy = document.querySelector("body");
+
+        let lightOn = true // true if light is on, false if light is off
+
+        function toggleLight() {
+            btn.classList.toggle("dark-button");
+            bdy.classList.toggle("dark-body");
+            if(lightOn) {
+                document.title = "Good Night"
+                lightOn = false;
+            } else {
+                document.title = "Good Morning"
+                lightOn = true;
+            }
+        }
+    </script>
+</body>
+</html>

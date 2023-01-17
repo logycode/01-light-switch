@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s background-color;
+}
+
+.body {
+    background-color: snow;
+}
+
+.button {
+    cursor: pointer;
+    background-color: inherit;
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+    border: 5px solid #333;
+    border-radius: 2px;
+    color: #333;
+}
+
+.dark-body {
+    background-color: #333;
+}
+
+.dark-button {
+    border: 5px solid snow;
+    color: snow;
+    /* box-shadow: 0 0 20px yellow */
+    box-shadow: 0 0 5px yellow, 0 0 10px yellow, 0 0 20px yellow;
+}
